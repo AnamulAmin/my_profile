@@ -108,12 +108,6 @@ function Navber({ children }) {
                 Work
               </Link>
             </li>
-            {/* <li className="relative h-[1.7rem] overflow-hidden group cursor-pointer">
-              <Link
-
-                href="/work"
-                className="after:content-['Work'] after:block after:text-[#FFD369] group-hover:my-[-1.7rem] block transition-all after:transition-all ease-linear duration-200">Work</Link>
-            </li> */}
             <li className="relative h-[1.7rem] overflow-hidden group cursor-pointer">
               <Link
                 href="/contact"
