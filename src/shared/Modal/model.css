@@ -1,0 +1,64 @@
+.visit_site {
+  background-color: #f8bc30;
+  color: black;
+  border-radius: 5px;
+}
+.visit_site:hover {
+  background-color: #ffb300;
+  color: black;
+}
+.visit_github {
+  background-color: #24292e;
+  color: white;
+  border-radius: 5px;
+}
+.visit_github:hover {
+  background-color: #1b252f;
+  color: white;
+}
+.nextui-width {
+  max-width: 85vw;
+  border-radius: 10px;
+}
+.project_webview {
+  width: 388px;
+  position: absolute;
+  left: 63px;
+  top: 0;
+  border-radius: 10px;
+  height: 278px;
+  overflow: auto;
+}
+.laptop {
+  width: 510px;
+  height: fit-content;
+}
+
+@media screen and (max-width: 1068px) {
+  .nextui-width {
+    max-width: 90vw;
+    border-radius: 10px;
+  }
+  .laptop {
+    margin: auto;
+  }
+  /* .project_webview {
+    width: 308px;
+    left: 44px;
+  } */
+}
+
+@media screen and (max-width: 486px) {
+  .nextui-width {
+    max-width: 90vw;
+    border-radius: 10px;
+  }
+  .laptop {
+    width: 300px;
+  }
+  .project_webview {
+    width: 230px;
+    left: 33px;
+    height: 170px;
+  }
+}
