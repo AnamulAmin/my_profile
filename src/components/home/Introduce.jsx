@@ -7,6 +7,8 @@ import FollowMe from "../FollowMe";
 import { IconCloudArea } from "../IconCloudArea";
 import PhysicsComponent from "../../shared/PhysicsComponent";
 
+// import BackgroundAnimation from "../../components/BackgroundAnimation/BackgroundAnimation";
+
 const texts = [
   "Hello",
   "Morphing",
@@ -73,7 +75,8 @@ function Introduce() {
 
       <Address />
       <FollowMe />
-      <PhysicsComponent />
+      {/* <PhysicsComponent /> */}
+      {/* <BackgroundAnimation /> */}
     </section>
   );
 }

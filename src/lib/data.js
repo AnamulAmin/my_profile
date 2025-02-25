@@ -3,7 +3,7 @@ export const data = {
     image: "/AnamulAmin.jpg",
     author: "Anamul Amin",
     hi: "Hi, I am",
-    text: "Hi, I'm Anamul Amin, a Full-Stack Developer based in Bangladesh. I specialize in building scalable, user-friendly web applications using modern technologies. Passionate about clean code, efficient systems, and seamless user experiences, I turn ideas into reality. 🚀",
+    text: " Anamul Amin, a Full-Stack Developer. I specialize in building scalable, user-friendly web applications using modern technologies. Passionate about clean code, efficient systems, and seamless user experiences, I turn ideas into reality. 🚀",
   },
   objective: {
     image: "/md-anamul-amin_1654674505.png",

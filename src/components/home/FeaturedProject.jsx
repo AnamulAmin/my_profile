@@ -33,6 +33,13 @@ const featuredData = [
     githubLink: "https://github.com/AnamAadel/TradeHaven",
   },
   {
+    link: "https://universal-server-front-end.vercel.app",
+    image: "/universal_survey.png",
+    title: "Universal Survey",
+    techName: "nextJs",
+    githubLink: "https://github.com/sadatcse/Universal-Server-Front-End",
+  },
+  {
     link: "https://my-ecommarce-website-wepe.vercel.app/",
     title: "Furniture shop",
     image:
@@ -125,7 +132,7 @@ export function FeaturedProject() {
         trigger: "#featured-project",
         pin: true,
         start: "top 30%",
-        end: () => `+=${window.innerHeight * 2}`,
+        // end: () => `+=${window.innerHeight * 2}`,
         scrub: 1, // 🔹 Prevents GSAP from adding extra spacing
         toggleActions: "play none none reverse",
         // onUpdate: () => {
@@ -155,9 +162,13 @@ export function FeaturedProject() {
     //   ease: "power2.inOut",
     // });
 
+    tl.set("#featured-project", {
+      transform: `translateX(0px)`,
+    });
+
     // Move sections horizontally
     tl.to("#featured-project", {
-      transform: `translateX(calc(${-250 * featuredData?.length}px))`,
+      transform: `translateX(calc(${-450 * featuredData?.length}px + 90vh))`,
       ease: "power2.inOut",
       onStart: () => {
         gsap.to("#featured-project-title", {
@@ -224,7 +235,7 @@ export function FeaturedProject() {
           </h2>
           <div
             id="featured-project"
-            className="hidden lg:flex gap-7 justify-center w-full px-3"
+            className="hidden lg:flex gap-7 justify-center w-full px-3 ml-[800px]"
           >
             {/* <LayoutGrid cards={cards} gridCols={`md:grid-cols-${cards.length}`} /> */}
             {featuredData &&
@@ -264,13 +275,13 @@ export function FeaturedProject() {
             ))}
         </section>
         <section
-          className="bg-gray-300 text-black  h-screen sticky top-0 rounded-tr-2xl rounded-tl-2xl overflow-hidden px-12 py-16"
+          className="bg-gray-300 text-black  h-screen sticky top-0 rounded-tr-2xl rounded-tl-2xl overflow-hidden px-12 py-16 mt-10"
           id="client_project"
         >
-          <h2 className="text-5xl block  text-black font-bold  relative  transition-all duration-500 mb-5 pb-5 client_project_item -translate-y-[20px] opacity-0">
+          <h2 className="text-5xl   text-black font-bold  relative mb-20 transition-all duration-500 pb-5 client_project_item -translate-y-[20px] opacity-0 inline-block border-b-2 border-black pr-36">
             Client
             <span className="ml-5 text-yellow-600">Projects</span>
-            <span className="w-0 h-[1px] absolute bottom-0 left-0 right-0 bg-black client_project_underline"></span>
+            {/* <span className="w-full h-[1px] absolute bottom-0 left-0 right-0 bg-black "></span> */}
           </h2>
           <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_100%_at_50%_0%,#000_70%,transparent_100%)]"></div>
           <ClientProject />
