@@ -6,7 +6,7 @@ import Image from "next/image";
 
 type Card = {
   id: number;
-  content: JSX.Element | React.ReactNode | string;
+  content: any;
   className: string;
   thumbnail: string;
 };

@@ -217,7 +217,7 @@ function Navbar({ children }) {
           {/* <ToggleMenu isOpen={showMenu} setIsOpen={handleMenu} /> */}
 
           <ul
-            className={` items-center gap-8 text-[1rem] font-medium hidden lg:flex flex-col lg:flex-row bg-white rounded-lg lg:bg-transparent absolute lg:static top-full right-0 sm:right-6 w-full sm:w-1/3 lg:w-fit py-8 lg:py-0 text-dark-300 lg:text-white transition-all duration-300 `}
+            className={` items-center gap-8 text-[1rem] mr-20 font-medium hidden lg:flex flex-col lg:flex-row bg-white rounded-lg lg:bg-transparent absolute lg:static top-full right-0 sm:right-6 w-full sm:w-1/3 lg:w-fit py-8 lg:py-0 text-dark-300 lg:text-white transition-all duration-300 `}
             id="nav_menu_bar"
           >
             <li className="relative h-[1.7rem] overflow-hidden group cursor-pointer">
@@ -244,7 +244,7 @@ function Navbar({ children }) {
                 Work
               </Link>
             </li>
-            <li className="relative h-[1.7rem] overflow-hidden group cursor-pointer">
+            {/* <li className="relative h-[1.7rem] overflow-hidden group cursor-pointer">
               <Link
                 href="/contact"
                 className="after:content-['Contact'] after:block after:text-[#FFD369] group-hover:my-[-1.7rem] block transition-all after:transition-all ease-linear duration-200"
@@ -259,7 +259,7 @@ function Navbar({ children }) {
               >
                 Test
               </Link>
-            </li>
+            </li> */}
           </ul>
 
           <ul
@@ -296,7 +296,7 @@ function Navbar({ children }) {
                 Work
               </Link>
             </li>
-            <li className="relative menu_link text-3xl  cursor-pointer close_menu_btn  ">
+            {/* <li className="relative menu_link text-3xl  cursor-pointer close_menu_btn  ">
               <Link
                 href="/contact"
                 className="block transition-all scale-100 hover:scale-150 after:transition-all ease-linear duration-200"
@@ -311,7 +311,7 @@ function Navbar({ children }) {
               >
                 Test
               </Link>
-            </li>
+            </li> */}
             <li className="container grid grid-cols-7 h-full absolute top-0 left-[50%] translate-x-[-50%] pointer-events-none">
               <div className="border-l-[0.1px] border-gray-400"></div>
               <div className="border-l-[0.1px] border-gray-400"></div>

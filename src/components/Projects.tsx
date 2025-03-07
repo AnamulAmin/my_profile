@@ -1,4 +1,4 @@
-import { projects } from "@/lib/data";
+import { projects } from "../lib/data";
 import { gsap } from "gsap";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
