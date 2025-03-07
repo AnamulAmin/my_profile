@@ -1,182 +1,248 @@
 [
-    {
-        "category": "Front-End",
-        "skills": [
-            {
-                "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-                "name": "React.js",
-                "description": "Building interactive user interfaces."
-            },
-            {
-                "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
-                "name": "HTML",
-                "description": "Structuring web pages with semantic markup."
-            },
-            {
-                "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-                "name": "CSS",
-                "description": "Styling web pages for a visually appealing layout."
-            },
-            {
-                "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-                "name": "JavaScript (ES6+)",
-                "description": "Implementing dynamic and responsive behavior."
-            }
-        ]
-    },
-    {
-        "category": "Back-End",
-        "skills": [
-            {
-                "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-                "name": "Node.js",
-                "description": "Executing JavaScript on the server side."
-            },
-            {
-                "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
-                "name": "Express.js",
-                "description": "Building robust and scalable server applications."
-            }
-        ]
-    },
-    {
-        "category": "Database",
-        "skills": [
-            {
-                "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
-                "name": "MongoDB",
-                "description": "NoSQL database for storing and retrieving data."
-            }
-        ]
-    },
-    {
-        "category": "APIs",
-        "skills": [
-            {
-                "logo": "https://cryptoqualitysignals.com/wp-content/uploads/2019/10/api-300x292.png",
-                "name": "RESTful API Design",
-                "description": "Creating APIs that follow REST principles."
-            }
-        ]
-    },
-    {
-        "category": "Version Control",
-        "skills": [
-            {
-                "logo": "https://cdn.freebiesupply.com/logos/large/2x/git-icon-logo-png-transparent.png",
-                "name": "Git",
-                "description": "Managing and tracking changes in your codebase."
-            }
-        ]
-    },
-    {
-        "category": "Package Managers",
-        "skills": [
-            {
-                "logo": "https://th.bing.com/th/id/OIP.s2DrphPSLqXBIB_CH8MVsQHaC5?rs=1&pid=ImgDetMain",
-                "name": "npm (Node Package Manager)",
-                "description": "Managing and installing project dependencies."
-            }
-        ]
-    },
-    {
-        "category": "Deployment",
-        "skills": [
-            {
-                "logo": "https://logowik.com/content/uploads/images/vercel1868.jpg",
-                "name": "Vercel, firebase, or similar platforms",
-                "description": "Deploying and hosting web applications."
-            }
-        ]
-    },
-    {
-        "category": "Other Tools",
-        "skills": [
-            {
-                "logo": "https://axios-http.com/assets/logo.svg",
-                "name": "Axios or Fetch",
-                "description": "Making HTTP requests from the client."
-            },
-            {
-                "logo": "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
-                "name": "Postman",
-                "description": "API testing and development tool."
-            }
-        ]
-    },
-    {
-        "category": "Development Environment",
-        "skills": [
-            {
-                "logo": "https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/VSCode-Dark.svg",
-                "name": "Visual Studio Code or Atom",
-                "description": "Code editors commonly used for web development."
-            }
-        ]
-    },
-    {
-        "category": "Command Line",
-        "skills": [
-            {
-                "logo": "/code-branch.png",
-                "name": "Basic command-line skills",
-                "description": "Navigating and executing commands in the terminal."
-            }
-        ]
-    },
-    {
-        "category": "TanStack",
-        "skills": [
-            {
-                "logo": "https://res.cloudinary.com/practicaldev/image/fetch/s--7zs698FL--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/q793fym8lm7xks9z08tp.png",
-                "name": "TanStack",
-                "description": "Library for managing, caching, and synchronizing server state in React applications. It's particularly useful for data fetching and state management in a declarative and efficient manner."
-            }
-        ]
-    },
-    {
-        "category": "Authentication and Authorization",
-        "skills": [
-            {
-                "logo": "https://jwt.io/img/pic_logo.svg",
-                "name": "JWT (JSON Web Tokens)",
-                "description": "Implementing secure authentication."
-            },
-            {
-                "logo": "https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/Firebase-Dark.svg",
-                "name": "Firebase Authentication",
-                "description": "User authentication service provided by Firebase."
-            }
-        ]
-    },
-    {
-        "category": "Server-Side Rendering (SSR) / Next.js",
-        "skills": [
-            {
-                "logo": "https://cdn.worldvectorlogo.com/logos/nextjs-2.svg",
-                "name": "Next.js",
-                "description": "Framework for building React applications with SSR."
-            }
-        ]
-    },
-    {
-        "category": "State Management",
-        "skills": [
-            {
-                "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-                "name": "Context API (React)",
-                "description": "Managing state in React applications."
-            }
-        ]
-    },
-    {
-        "category": "Responsive Design",
-        "skills": [
-            {
-                "logo": "/apps.png",
-                "name": "CSS Frameworks (Bootstrap, TailwindCss)",
-                "description": "Building responsive and visually appealing user interfaces."
-            }
-        ]
-    }
+  {
+    "category": "Front-End",
+    "skills": [
+      {
+        "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+        "name": "HTML",
+        "description": "Structuring web pages with semantic markup."
+      },
+      {
+        "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+        "name": "CSS",
+        "description": "Styling web pages for a visually appealing layout."
+      },
+      {
+        "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+        "name": "JavaScript (ES6+)",
+        "description": "Implementing dynamic and responsive behavior."
+      },
+      {
+        "logo": "/icons/typescript.svg",
+        "name": "TypeScript",
+        "description": "TypeScript is a superset of JavaScript that adds static typing, improving code quality and maintainability. It helps catch errors early, enhances development with better tooling and autocomplete, and compiles down to JavaScript for compatibility with browsers and Node.js."
+      },
+      {
+        "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+        "name": "React.js",
+        "description": "Building interactive user interfaces."
+      },
+      {
+        "logo": "/icons/electron.svg",
+        "name": "electron.js",
+        "description": "Electron.js is a framework for building cross-platform desktop apps using JavaScript, HTML, and CSS, powered by Chromium and Node.js. It enables web developers to create native applications for Windows, macOS, and Linux with access to OS features."
+      },
+      {
+        "logo": "/icons/expo.svg",
+        "name": "Expo",
+        "description": "Expo is a framework for building React Native applications with a streamlined development process. It provides tools, libraries, and services to create cross-platform mobile apps for iOS, Android, and web without needing native code."
+      },
+      {
+        "logo": "/icons/jQuery_light.svg",
+        "name": "jQuery",
+        "description": "jQuery simplifies DOM manipulation, event handling, animations, and AJAX requests efficiently."
+      }
+    ]
+  },
+  {
+    "category": "Back-End",
+    "skills": [
+      {
+        "logo": "/icons/nodejs.svg",
+        "name": "Node.js",
+        "description": "Executing JavaScript on the server side."
+      },
+      {
+        "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
+        "name": "Express.js",
+        "description": "Building robust and scalable server applications."
+      },
+      {
+        "logo": "/icons/mongose.webp",
+        "name": "mongose",
+        "description": "Mongoose simplifies MongoDB interactions with schemas, validation, queries, and middleware."
+      }
+    ]
+  },
+  {
+    "category": "Database",
+    "skills": [
+      {
+        "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+        "name": "MongoDB",
+        "description": "NoSQL database for storing and retrieving data."
+      }
+    ]
+  },
+  {
+    "category": "APIs",
+    "skills": [
+      {
+        "logo": "https://cryptoqualitysignals.com/wp-content/uploads/2019/10/api-300x292.png",
+        "name": "RESTful API Design",
+        "description": "Creating APIs that follow REST principles."
+      }
+    ]
+  },
+  {
+    "category": "Version Control",
+    "skills": [
+      {
+        "logo": "https://cdn.freebiesupply.com/logos/large/2x/git-icon-logo-png-transparent.png",
+        "name": "Git",
+        "description": "Managing and tracking changes in your codebase."
+      }
+    ]
+  },
+  {
+    "category": "Package Managers",
+    "skills": [
+      {
+        "logo": "https://th.bing.com/th/id/OIP.s2DrphPSLqXBIB_CH8MVsQHaC5?rs=1&pid=ImgDetMain",
+        "name": "npm (Node Package Manager)",
+        "description": "Managing and installing project dependencies."
+      }
+    ]
+  },
+  {
+    "category": "Deployment",
+    "skills": [
+      {
+        "logo": "https://logowik.com/content/uploads/images/vercel1868.jpg",
+        "name": "Vercel, firebase, or similar platforms",
+        "description": "Deploying and hosting web applications."
+      }
+    ]
+  },
+  {
+    "category": "Other Tools",
+    "skills": [
+      {
+        "logo": "https://axios-http.com/assets/logo.svg",
+        "name": "Axios or Fetch",
+        "description": "Making HTTP requests from the client."
+      },
+      {
+        "logo": "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
+        "name": "Postman",
+        "description": "API testing and development tool."
+      },
+      {
+        "logo": "/icons/warp.svg",
+        "name": "warp",
+        "description": "API testing and development tool."
+      }
+    ]
+  },
+  {
+    "category": "Development Environment",
+    "skills": [
+      {
+        "logo": "https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/VSCode-Dark.svg",
+        "name": "Visual Studio Code or Atom",
+        "description": "Code editors commonly used for web development."
+      },
+      {
+        "logo": "/icons/cursor.svg",
+        "name": "cursor",
+        "description": "Built to make extraordinarily productive, cursor is the best way to code with AI."
+      },
+      {
+        "logo": "/icons/trae.svg",
+        "name": "trae",
+        "description": "Trae is an adaptive AI IDE that transforms how  work, collaborating  to run faster."
+      },
+      {
+        "logo": "/icons/windsurf.svg",
+        "name": "windsurf",
+        "description": "The Windsurf Editor is where the work of developers and AI truly flow together, allowing for a coding experience that feels like literal magic."
+      }
+    ]
+  },
+  {
+    "category": "Command Line",
+    "skills": [
+      {
+        "logo": "/code-branch.png",
+        "name": "Basic command-line skills",
+        "description": "Navigating and executing commands in the terminal."
+      }
+    ]
+  },
+
+  {
+    "category": "Authentication and Authorization",
+    "skills": [
+      {
+        "logo": "https://jwt.io/img/pic_logo.svg",
+        "name": "JWT (JSON Web Tokens)",
+        "description": "Implementing secure authentication."
+      },
+      {
+        "logo": "https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/Firebase-Dark.svg",
+        "name": "Firebase Authentication",
+        "description": "User authentication service provided by Firebase."
+      },
+      {
+        "logo": "/icons/clerk-light.svg",
+        "name": "clerk Authentication",
+        "description": "Clerk is a complete suite of embeddable UIs, flexible APIs, and admin dashboards to authenticate and manage users."
+      }
+    ]
+  },
+  {
+    "category": "Server-Side Rendering (SSR) / Next.js",
+    "skills": [
+      {
+        "logo": "https://cdn.worldvectorlogo.com/logos/nextjs-2.svg",
+        "name": "Next.js",
+        "description": "Framework for building React applications with SSR."
+      }
+    ]
+  },
+  {
+    "category": "State Management",
+    "skills": [
+      {
+        "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+        "name": "Context API (React)",
+        "description": "Managing state in React applications."
+      },
+      {
+        "logo": "/icons/redux.png",
+        "name": "Redux",
+        "description": "A JS library for predictable and maintainable global state management"
+      }
+    ]
+  },
+  {
+    "category": "Responsive Design",
+    "skills": [
+      {
+        "logo": "/apps.png",
+        "name": "CSS Frameworks (Bootstrap, TailwindCss)",
+        "description": "Building responsive and visually appealing user interfaces."
+      }
+    ]
+  },
+  {
+    "category": "Animation",
+    "skills": [
+      {
+        "logo": "/icons/Framer_light.svg",
+        "name": "Motion",
+        "description": "A modern animation library for JavaScript and React"
+      },
+      {
+        "logo": "/icons/greensock.svg",
+        "name": "Gsap",
+        "description": "A wildly robust JavaScript animation library built for professionals"
+      },
+      {
+        "logo": "/icons/threejs.png",
+        "name": "Three Js",
+        "description": "A JavaScript library for creating 3D graphics in the browser."
+      }
+    ]
+  }
 ]

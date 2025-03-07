@@ -1,4 +1,4 @@
-import Skills from "@/components/resume/Skills";
+import Skills from "../components/resume/Skills";
 import Banner from "../components/Banner";
 import LanguageSkills from "../components/LanguageSkills";
 import MainTag from "../components/MainTag";

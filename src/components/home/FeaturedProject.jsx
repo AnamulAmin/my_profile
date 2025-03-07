@@ -17,12 +17,20 @@ import MainTag from "../MainTag";
 
 const featuredData = [
   {
-    link: "https://assignment-11-lyart.vercel.app/",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/my-e-commarce.appspot.com/o/images%2Fhost-image%2Fscreencapture-localhost-5173-2023-12-12-13_19_28.png?alt=media&token=ebee3177-961f-4ce9-a686-27b04d3fc8a5",
-    title: "HomeSwapHub",
-    techName: "reactJs",
-    githubLink: "https://github.com/AnamAadel/-HomeSwapHub",
+    link: "https://universal-server-front-end.vercel.app",
+    image: "/universal_survey.png",
+    title: "Universal Survey",
+    techName: "nextJs",
+    githubLink: "https://github.com/sadatcse/Universal-Server-Front-End",
+    description:
+      "A dynamic and user-friendly online survey platform that allows users to easily create, distribute, and analyze surveys in real-time. The application provides a seamless experience with customizable survey questions, multiple response types, and instant result tracking. The platform’s responsive design ensures it’s accessible across all devices, making it ideal for gathering feedback, conducting research, or collecting opinions.",
+    list: [
+      "☑️ Real-Time Survey Responses",
+      "☑️ Customizable Survey Creation",
+      "☑️ Customizable Survey Creation",
+      "☑️ Responsive & Mobile-Friendly",
+      "☑️ Secure Data Management",
+    ],
   },
   {
     link: "https://trade-haven.vercel.app/",
@@ -31,13 +39,31 @@ const featuredData = [
     title: "TradeHaven",
     techName: "reactJs",
     githubLink: "https://github.com/AnamAadel/TradeHaven",
+    description:
+      "BistroBos is a feature-rich web application tailored for a restaurant or food-related business. This project integrates modern web technologies to offer a seamless and dynamic user experience. It provides functionality such as real-time data updates, an interactive image zoom feature, and a rating system. With a responsive design and user-friendly interface, it is optimized for both desktop and mobile devices.",
+    list: [
+      "☑️ Interactive Image Zoom: Users can zoom in on images for a closer look using React Image Zoom.",
+      "☑️ Rating System: Integrates a star-rating component for user reviews and feedback.",
+      "☑️ Countdown Timer: Implements a countdown timer for special promotions or events.",
+      "☑️ Form Handling: Uses React Hook Form for managing form inputs, including CAPTCHA verification and Google reCAPTCHA for security.",
+      "☑️ Responsive Design: Fully responsive layout, built with Tailwind CSS for optimal display across all devices.",
+    ],
   },
   {
-    link: "https://universal-server-front-end.vercel.app",
-    image: "/universal_survey.png",
-    title: "Universal Survey",
-    techName: "nextJs",
-    githubLink: "https://github.com/sadatcse/Universal-Server-Front-End",
+    link: "https://assignment-11-lyart.vercel.app/",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/my-e-commarce.appspot.com/o/images%2Fhost-image%2Fscreencapture-localhost-5173-2023-12-12-13_19_28.png?alt=media&token=ebee3177-961f-4ce9-a686-27b04d3fc8a5",
+    title: "HomeSwapHub",
+    techName: "reactJs",
+    githubLink: "https://github.com/AnamAadel/-HomeSwapHub",
+    description:
+      "A versatile web application designed to deliver a seamless user experience, integrating dynamic features for smooth interaction. This project uses modern tools like GSAP for animations, Firebase for real-time data handling, and Leaflet for interactive maps. The app’s responsive design ensures it’s fully functional across all devices. With a focus on accessibility and smooth interactions, the project includes advanced features like scrolling animations, custom alerts, and real-time updates.",
+    list: [
+      "☑️ Responsive Design: Optimized for desktop, tablet, and mobile views.",
+      "☑️  Real-Time Data: Firebase integration for real-time data and updates.",
+      "☑️  Interactive Map: Leaflet integration for displaying dynamic geographical data.",
+      "☑️  User Alerts: Customizable alerts using React-Bootstrap-Sweetalert.",
+    ],
   },
   {
     link: "https://my-ecommarce-website-wepe.vercel.app/",
@@ -46,6 +72,16 @@ const featuredData = [
       "https://firebasestorage.googleapis.com/v0/b/my-e-commarce.appspot.com/o/images%2Fhost-image%2Ffurniture.png?alt=media&token=b741bd7a-6edc-4465-8e90-e2b74580fcce",
     techName: "nextJs",
     githubLink: "https://github.com/AnamAadel/my-ecommarce-website",
+    description:
+      "My E-commerce Website is a fully functional online store designed to provide a smooth and modern shopping experience. Built using the latest web technologies, this platform enables users to browse products, add them to the cart, and proceed to checkout with ease. The website features a clean, responsive design that works seamlessly across all devices.",
+    list: [
+      "☑️  User-Friendly Interface: A simple, intuitive interface that makes navigating products and shopping effortless.",
+      "☑️  Product Catalog: Displays products with detailed descriptions, images, and pricing, allowing users to easily browse and choose items.",
+      "☑️  Cart Functionality: Users can add, update, and remove items from their shopping cart, with the ability to view the total cost.",
+      "☑️  Secure Checkout: Integration with payment gateways to ensure a smooth and secure checkout process.",
+      "☑️  Responsive Design: Built using Tailwind CSS and React, ensuring the website adapts well to various screen sizes and devices.",
+      "☑️  Modern Tech Stack: Developed using React, Axios for API requests, Firebase for authentication, and other essential libraries like React Router for seamless navigation.",
+    ],
   },
   {
     link: "https://assignment-12-fawn.vercel.app/",
@@ -54,6 +90,16 @@ const featuredData = [
     title: "WanderWise",
     techName: "reactJs",
     githubLink: "https://github.com/AnamAadel/WanderWise",
+    description:
+      "WanderWise is an innovative travel platform designed to help users plan their next adventure with ease. The website offers a clean and intuitive interface, allowing users to explore various travel destinations, check out itineraries, and book their trips without any hassle.",
+    list: [
+      "☑️  Intuitive User Interface: A sleek and modern design that provides an enjoyable browsing experience on both desktop and mobile devices.",
+      "☑️  Dynamic Travel Recommendations: Users can explore curated travel destinations based on their preferences and interests, making trip planning both fun and personalized.",
+      "☑️  Interactive Maps: Integration with interactive maps to help users visualize locations, routes, and travel plans.",
+      "☑️  Seamless Navigation: Thanks to React Router, users can easily navigate between pages with fast transitions, ensuring a smooth experience.",
+      "☑️  Modern Tech Stack: Built using React, Tailwind CSS, Firebase for authentication, and other essential libraries for smooth interaction.",
+      "☑️  Performance Optimized: The website is optimized for speed, ensuring fast load times and smooth user interaction.",
+    ],
   },
   {
     link: "https://assignment-10-nu-nine.vercel.app/",
@@ -62,6 +108,17 @@ const featuredData = [
     title: "TechHaven",
     techName: "reactJs",
     githubLink: "https://github.com/AnamAadel/TechHaven",
+    description:
+      "TechHaven is an innovative e-commerce platform designed specifically for tech enthusiasts looking to purchase the latest gadgets and tech accessories. With a user-friendly interface and seamless shopping experience, TechHaven offers a wide range of products, from smartphones and laptops to accessories like chargers, headphones, and more.",
+    list: [
+      "☑️  Wide Range of Products: Browse a comprehensive catalog of tech gadgets and accessories, with detailed product descriptions and specifications.",
+      "☑️  Interactive Product Pages: High-quality images, 360-degree views, and zoom features to help users make informed purchasing decisions.",
+      "☑️  Real-Time Search and Filters: An intelligent search bar with filters that allow users to quickly find products based on categories, brands, prices, and more.",
+      "☑️  User Authentication: Integration with Firebase Authentication for secure and reliable user login and registration, with easy access to order history and profiles.",
+      "☑️  Shopping Cart: A fully functional cart system that lets users add, remove, and edit items with real-time updates on the total amount.",
+      "☑️  Secure Payment System: Implemented integration with payment gateways to ensure safe transactions.",
+      "☑️  Responsive Design: The website is fully responsive, providing an optimized shopping experience on all devices.",
+    ],
   },
 ];
 
@@ -278,9 +335,9 @@ export function FeaturedProject() {
           className="bg-gray-300 text-black  h-screen sticky top-0 rounded-tr-2xl rounded-tl-2xl overflow-hidden px-12 py-16 mt-10"
           id="client_project"
         >
-          <h2 className="text-5xl   text-black font-bold  relative mb-20 transition-all duration-500 pb-5 client_project_item -translate-y-[20px] opacity-0 inline-block border-b-2 border-black pr-36">
+          <h2 className="text-5xl mx-auto text-center text-black font-bold relative mb-20 transition-all duration-500 pb-5 client_project_item -translate-y-[20px] opacity-0 w-[600px] border-b-2 border-black px-36">
             Client
-            <span className="ml-5 text-yellow-600">Projects</span>
+            <span className="ml-5 text-yellow-600 ">Projects</span>
             {/* <span className="w-full h-[1px] absolute bottom-0 left-0 right-0 bg-black "></span> */}
           </h2>
           <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_100%_at_50%_0%,#000_70%,transparent_100%)]"></div>

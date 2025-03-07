@@ -34,21 +34,20 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {/* <Script src="/physicsjs.min.js" strategy="beforeInteractive"></Script> */}
-        <ReactLenis root>
-          {/* <HeroUIProvider> */}
-          <Navbar />
-          <MainTag>
-            {children}
-            {/* </HeroUIProvider> */}
-            {/* <section
+        {/* <HeroUIProvider> */}
+        <Navbar />
+
+        <MainTag>
+          {children}
+          {/* </HeroUIProvider> */}
+          {/* <section
           onClick={handleScrollTop}
           className="bg-black h-40 relative z-10 grid place-content-center text-2xl rounded-tr-full rounded-tl-full"
         >
           Thanks for Scrolling
         </section> */}
-            <Footer />
-          </MainTag>
-        </ReactLenis>
+          <Footer />
+        </MainTag>
       </body>
     </html>
   );

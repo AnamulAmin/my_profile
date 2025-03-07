@@ -34,24 +34,29 @@ function Skills() {
     fetchData();
   }, []);
   return (
-    <div className="flex flex-col md:flex-row gap-6 container mx-auto py-16">
-      <div className="text-center skill-title text-white w-[30%] px-3 pt-28">
-        <h2 className="text-3xl text-white font-bold   mb-6">
-          Technical <span className=" text-lightGreen"> Abilities:</span>
-        </h2>
+    <div className="flex flex-col md:flex-row  container mx-auto ">
+      <div className="flex justify-between ">
+        <div className="w-[30%] ">
+          <div className="text-center sticky top-0 skill-title text-white  px-3 pb-5   w-full bg-neutral-900 border border-gray-500 border-t-none">
+            <h2 className="text-3xl text-white font-bold pt-5  mb-6">
+              Technical <span className=" text-lightGreen"> Abilities</span>
+            </h2>
 
-        <p className="text-xl">
-          Enthusiastic MERN stack developer with a focus on simplicity and
-          user-centric design. Proficient in React.js, Node.js, and MongoDB.
-          Familiar with Git, npm. Eager to learn and contribute to innovative
-          projects.
-        </p>
-      </div>
-
-      <div className="space-y-36 w-[75%]" id="skillContent">
-        <div className="w-full rounded-lg text-neutral bg-white p-10 grid grid-cols-1 md:grid-cols-2 gap-16">
-          {mySkills &&
-            mySkills.map((skill, idx) => <TechBox skill={skill} key={idx} />)}
+            <p className="text-xl">
+              Enthusiastic MERN stack developer with a focus on simplicity and
+              user-centric design. Proficient in React.js, Node.js, and MongoDB.
+              Familiar with Git, npm. Eager to learn and contribute to
+              innovative projects.
+            </p>
+          </div>
+        </div>
+        <div className="space-y-36 w-full bg-white pt-12">
+          <div className="w-full rounded-lg text-neutral p-10 grid grid-cols-1 md:grid-cols-2 gap-16">
+            {mySkills &&
+              mySkills.map((skill, idx) => (
+                <TechBox skill={skill} key={idx} idx={idx} />
+              ))}
+          </div>
         </div>
       </div>
     </div>

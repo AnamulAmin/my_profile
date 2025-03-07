@@ -23,11 +23,11 @@
 .project_webview {
   width: 388px;
   position: absolute;
-  left: 63px;
+  left: 60px;
   top: 0;
   border-radius: 10px;
   height: 278px;
-  overflow: auto;
+  /* overflow: auto; */
 }
 .laptop {
   width: 510px;

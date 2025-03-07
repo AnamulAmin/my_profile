@@ -2,33 +2,81 @@
 import { MoveUpRight } from "lucide-react";
 import { useMediaQuery } from "../../hooks/use-media-query";
 import React, { useState, useRef, useCallback, useEffect } from "react";
+import NextUiModal from "../../shared/Modal/NextUiModal";
 const images = [
   {
     id: 1,
     src: "/client_website/multigym.png",
     alt: "Multi Gym Premium",
     link: "https://multigympremium.com/",
+    title: "MultiGym Premium: The Ultimate Gym Management Solution",
+    description:
+      "MultiGym Premium is a cutting-edge gym management platform designed to streamline fitness business operations with a modern, intuitive interface. Built with React, Vite, and TailwindCSS, it ensures a seamless experience for both gym administrators and members.",
+    list: [
+      "☑️ Membership Management – Track and manage gym members effortlessly",
+      "☑️ Subscription & Payment Handling – Secure online payments and automated renewals",
+      "☑️ Class & Trainer Scheduling – Organize sessions with a dynamic calendar",
+      "☑️ Real-time Analytics & Reports – Track performance using advanced data visualization",
+      "☑️ Attendance Tracking – Automated check-in system for members",
+      "☑️ Notifications & Alerts – Stay connected with email and in-app alerts",
+      "☑️ File & Document Uploads – Manage contracts, invoices, and forms",
+      "☑️ Responsive & Fast UI – Powered by React, MUI, Framer Motion, and TailwindCSS",
+      "☑️ Secure Authentication – Firebase integration for login and user management",
+    ],
   },
   {
     id: 2,
     src: "/client_website/multigym_app.png",
     alt: "Multi Gym Premium Admin",
+    link: "https://multigym-web.vercel.app/",
+    title: "Gym-APS: Advanced Gym Management System",
+    description:
+      "Gym-APS is a feature-rich gym management system built with React (Next.js), Vite, and TailwindCSS to streamline fitness center operations. It provides an intuitive and efficient way to manage members, track attendance, handle payments, and generate reports.",
+    list: [
+      "☑️ Member Management – Register, update, and track gym members",
+      "☑️ Subscription Plans – Manage membership tiers & renewals",
+      "☑️ Attendance Tracking – Automated check-in & check-out system",
+      "☑️ Payment System – Secure transactions with Stripe integration",
+      "☑️ PDF Generation – Downloadable invoices & reports using jspdf and html2pdf.js",
+      "☑️ Live Notifications – WebSockets for real-time updates",
+      "☑️ Multi-User Roles – Admin, trainers, and members with role-based access",
+    ],
   },
   {
     id: 3,
     src: "/client_website/multisports.webp",
     alt: "MULTI SPORTS",
+    link: "https://multisports-u6s5-git-main-aadelbanat8991gmailcoms-projects.vercel.app/",
+    title: "",
+    description: "",
+    list: [],
   },
   {
     id: 4,
     src: "/client_website/multisports_app.png",
     alt: "MULTI SPORTS Admin",
+    link: "https://multisports-u6s5-git-main-aadelbanat8991gmailcoms-projects.vercel.app/login",
+    title: "Gym-APS: A Feature-Rich E-commerce Platform",
+    description:
+      "MULTI SPORTS is a modern eCommerce platform designed for fitness enthusiasts, offering seamless shopping experiences with integrated delivery services (Pathao & StreetFast APIs). Built with React , Vite, and TailwindCSS, this project ensures high performance, scalability, and a smooth user experience.",
+    list: [
+      "☑️ User Authentication – Secure login & registration ",
+      "☑️ Product Management – Add, edit, and manage inventory",
+      "☑️ Cart & Checkout – Dynamic cart system with real-time price updates",
+      "☑️ Payment Integration – Supports Stripe for secure transactions",
+      "☑️ Order Tracking – Live order updates with Pathao & StreetFast integration",
+      "☑️ PDF Generation – Downloadable invoices using html2pdf.js and jspdf",
+      "☑️ Real-time Updates – WebSockets for live order status changes",
+      "☑️ Performance Optimizations – Lazy loading, code splitting, caching",
+    ],
   },
 ];
 
 const ClientProject = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
   const [activeImage, setActiveImage] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
+  const [singleData, setSingleData] = useState({});
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [opacity, setOpacity] = useState(0);
   const [scale, setScale] = useState(0.5);
@@ -45,6 +93,7 @@ const ClientProject = () => {
     setCursorPosition({ x: newX, y: newY });
     prevCursorPosition.current = { x: newX, y: newY };
   }, []);
+
   useEffect(() => {
     const updateCursorPosition = (e) => {
       if (requestRef.current) return;
@@ -59,6 +108,7 @@ const ClientProject = () => {
       if (requestRef.current) cancelAnimationFrame(requestRef.current);
     };
   }, [handleMouseMove]);
+
   const handleImageHover = useCallback(
     (image) => {
       if (activeImage !== image) {
@@ -83,6 +133,12 @@ const ClientProject = () => {
       setActiveImage(null);
     }, 300);
   }, []);
+
+  const handleOpenModal = (image) => {
+    setSingleData(image);
+    setIsOpen(true);
+  };
+
   return (
     <div
       className="relative w-full min-h-fit dark:bg-gradient-to-b from-black from-10% to-gray-950 to-100%  rounded-md"
@@ -93,6 +149,7 @@ const ClientProject = () => {
           key={image.id}
           className={`p-4 cursor-pointer relative sm:flex items-center justify-between `}
           onMouseEnter={() => handleImageHover(image)}
+          onClick={() => handleOpenModal(image)}
         >
           {!isDesktop && (
             <img
@@ -142,6 +199,13 @@ const ClientProject = () => {
           }}
         />
       )}
+
+      {/* Modal */}
+      <NextUiModal
+        isOpen={isOpen}
+        onOpenChange={setIsOpen}
+        singleData={singleData}
+      />
     </div>
   );
 };

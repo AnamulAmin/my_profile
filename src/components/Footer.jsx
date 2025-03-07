@@ -154,7 +154,7 @@ function Footer() {
   return (
     <footer
       id="footerArea"
-      className="footer overflow-hidden  bg-blue-200 pb-4  text-neutral grid grid-cols-4 justify-center gap-3 px-6 lg:px-28 font-semibold  rounded-tl-[180px] rounded-tr-[180px] w-[94%] mx-auto"
+      className="footer overflow-hidden  bg-white pb-4  text-neutral grid grid-cols-4 justify-center gap-3 px-6 lg:px-28 font-semibold  rounded-tl-[180px] rounded-tr-[180px] w-[94%] mx-auto"
     >
       {/* <aside>
         <header className="footer-title">Services</header>

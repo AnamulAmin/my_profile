@@ -1,23 +1,23 @@
 import Image from "next/image";
 import { FaGithubAlt } from "react-icons/fa";
-import { FaClapperboard } from "react-icons/fa6";
+import { FaClapperboard, FaEye } from "react-icons/fa6";
 function ProjectCard({ item }) {
   return (
-    <div className="proj_box boxImage ">
+    <div className="proj_box overflow-hidden">
       <h3 className="proj_title">{item.title}</h3>
       <div className="demo relative group">
-        <div className="absolute top-0 right-0 p-3 bg-neutral-800 h-full flex flex-col gap-3 bg-opacity-90 opacity-0 transition-all duration-500 group-hover:opacity-100">
+        <div className="absolute top-0 right-0 p-3  h-full flex flex-col gap-3 bg-opacity-90  transition-all duration-500 z-50">
           <a
             href={item.link}
             target="_blank"
-            className="btn btn-outline btn-warning"
+            className="bg-black text-white rounded-full p-2 transition-all duration-300 group-hover:bg-success-700 border featured_card_link hover:text-yellow-500 hover:border-yellow-500 hover:scale-125 translate-x-[100px] group-hover:translate-x-0 delay-100 spring"
           >
             <FaClapperboard />
           </a>
           <a
             href={item.githubLink}
             target="_blank"
-            className="btn btn-outline btn-warning"
+            className="bg-black text-white rounded-full p-2 transition-all duration-300 group-hover:bg-success-700 border featured_card_link hover:text-yellow-500 hover:border-yellow-500 hover:scale-125 translate-x-[100px] group-hover:translate-x-0 delay-200"
           >
             <FaGithubAlt />
           </a>

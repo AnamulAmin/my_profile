@@ -8,8 +8,8 @@ export const data = {
   objective: {
     image: "/md-anamul-amin_1654674505.png",
     name: "Muhammad Anamul Amin.",
-    hi: "Hey there! I'm",
-    text: "a budding MERN stack developer excited about web development. I know my way around JavaScript and love making application that are easy for people to use. I can't wait to start my tech journey!",
+    hi: "Hey there! I'm ",
+    text: "a passionate Full Stack Developer with 5 months of experience in web development. I've worked on 7 full-stack , 5 React front-end projects, and a desktop application using Electron. I specialize in the MERN stack (MongoDB, Express.js, React, Node.js) and have a strong focus on building seamless, user-friendly applications. My goal is to create intuitive and efficient digital solutions that make life easier for users. I'm excited to continue growing my skills and contributing to the tech community!",
     address: [
       {
         title: "Age",
@@ -117,19 +117,19 @@ export const data = {
   language_skills: [
     {
       name: "Bangla",
-      percent: [100, 100, 100, 100, 0, 0, 0, 0, 0, 0],
+      percent: [100, 100, 100, 100, 100, 0, 0, 0, 0, 0],
     },
     {
       name: "English",
-      percent: [100, 100, 100, 0, 0, 0, 0, 0, 0, 0],
+      percent: [100, 100, 100, 100, 100, 0, 0, 0, 0, 0],
     },
     {
       name: "Arabic",
-      percent: [100, 100, 50, 0, 0, 0, 0, 0, 0, 0],
+      percent: [100, 100, 100, 70, 0, 0, 0, 0, 0, 0],
     },
     {
       name: "Urdu",
-      percent: [100, 100, 100, 0, 0, 0, 0, 0, 0, 0],
+      percent: [100, 100, 100, 70, 0, 0, 0, 0, 0, 0],
     },
   ],
   knowledge: [

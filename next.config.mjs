@@ -14,6 +14,7 @@ const nextConfig = {
       "jwt.io",
       "cdn.worldvectorlogo.com",
       "firebasestorage.googleapis.com",
+      "fir-authenticationprojec-880fd.appspot.com",
     ],
   },
 };

@@ -3,12 +3,12 @@ function LanguageSkills() {
   const { language_skills } = data;
   return (
     <>
-      <section className="container m-auto text-white py-16">
-        <h2 className="text-4xl font-medium mb-16 mt-32 px-10">
+      <section className="container m-auto text-white py-10 mb-32">
+        <h2 className="text-4xl font-medium mb-16 mt-10 px-10">
           Language Skills
         </h2>
 
-        <div className="w-full px-6 sm:px-14 py-20 text-neutral bg-white rounded-lg border-[0.1px] border-gray-400 grid grid-cols-1 lg:grid-cols-2 gap-x-36 gap-y-8">
+        <div className="w-full px-6 sm:px-14 py-20 text-neutral bg-neutral-900 rounded-lg border-[0.1px] border-gray-400 grid grid-cols-1 lg:grid-cols-2 gap-x-36 gap-y-8">
           {/* <!-- Bangla --> */}
           {language_skills &&
             language_skills.map((item, ind) => (
