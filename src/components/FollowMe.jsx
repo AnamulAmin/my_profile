@@ -7,17 +7,11 @@ function FollowMe() {
       <p className="capitalize font-medium">follow me</p>
       <span className="w-[1px] h-16 bg-white self-center"></span>
       <div className="writting_mode_tb flex flex-col items-center gap-2">
-        <a href="#">
+        <a>
           <FaLinkedinIn />
         </a>
-        <a href="#">
+        <a href="https://github.com/AnamulAmin" target="_black">
           <AiFillGithub />
-        </a>
-        <a href="#">
-          <FaFacebook />
-        </a>
-        <a href="#">
-          <AiFillInstagram />
         </a>
       </div>
     </div>
