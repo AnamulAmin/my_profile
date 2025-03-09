@@ -3,7 +3,7 @@ import Image from "next/image";
 function TechCard({ technology }) {
   return (
     <div className="flex w-full items-center justify-between rounded-2xl bg-white p-3 shadow-3xl shadow-shadow-500 dark:!bg-navy-700 dark:shadow-none">
-      <div className="flex items-start">
+      <div className="flex flex-col lg:flex-row items-start gap-3">
         <div className="w-[60px]">
           <Image
             className="h-[50px] w-[50px] object-contain"
@@ -13,9 +13,9 @@ function TechCard({ technology }) {
             height="700"
           />
         </div>
-        <div className="ml-4">
+        <div className="lg:ml-4">
           <h4 className="text-2xl font-bold capitalize">{technology.name}</h4>
-          <p className="text-base font-medium text-navy-700 dark:text-white w-[350px]">
+          <p className="text-base font-medium text-navy-700 dark:text-white max-w-[350px]">
             {technology.description}
           </p>
         </div>

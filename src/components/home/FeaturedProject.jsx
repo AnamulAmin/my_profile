@@ -130,143 +130,145 @@ export function FeaturedProject() {
   const [singleData, setSingleData] = useState();
   const [isOpen, setIsOpen] = useState(false);
   useGSAP(() => {
-    const featuredProject = document.getElementById("featured-project");
-    const client_project_links = gsap.utils.toArray(".client_project_item");
-    const client_project_underline = gsap.utils.toArray(
-      ".client_project_underline"
-    );
+    if (window.innerWidth > 960) {
+      const featuredProject = document.getElementById("featured-project");
+      const client_project_links = gsap.utils.toArray(".client_project_item");
+      const client_project_underline = gsap.utils.toArray(
+        ".client_project_underline"
+      );
 
-    // gsap.from(client_project_links, {
-    //   opacity: 0,
-    //   y: 20, // Simplified transform property
-    //   duration: 0.5,
-    //   ease: "power2.inOut",
-    //   stagger: 0.1,
-    //   scrollTrigger: {
-    //     trigger: "#client_project",
-    //     start: "top 50%",
-    //     toggleActions: "play none reverse none", // Allows reverse on scroll-up
-    //     markers: true,
-    //   },
-    // });
+      // gsap.from(client_project_links, {
+      //   opacity: 0,
+      //   y: 20, // Simplified transform property
+      //   duration: 0.5,
+      //   ease: "power2.inOut",
+      //   stagger: 0.1,
+      //   scrollTrigger: {
+      //     trigger: "#client_project",
+      //     start: "top 50%",
+      //     toggleActions: "play none reverse none", // Allows reverse on scroll-up
+      //     markers: true,
+      //   },
+      // });
 
-    if (client_project_links.length > 0) {
-      gsap.to(client_project_links, {
-        opacity: 1,
-        y: 0,
-        duration: 0.5,
-        ease: "power2.inOut",
-        stagger: 0.3,
-        scrollTrigger: {
-          trigger: client_project_links,
-          start: "top 60%",
-          toggleActions: "play none reverse reverse",
-        },
-        onStart: () => {
-          gsap.fromTo(
-            client_project_underline,
-            {
-              width: "0%",
-              duration: 1,
-              ease: "power2.inOut",
-              stagger: 0.3,
-            },
-            {
-              width: "100%",
-              duration: 1,
-              ease: "power2.inOut",
-              stagger: 0.3,
-            }
-          );
-        },
-      });
-    } else {
-      console.warn("No .client_project_item elements found.");
-    }
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#featured-project",
-        pin: true,
-        start: "top 30%",
-        // end: () => `+=${window.innerHeight * 2}`,
-        scrub: 1, // 🔹 Prevents GSAP from adding extra spacing
-        toggleActions: "play none none reverse",
-        // onUpdate: () => {
-        //   const { scrollY } = window;
-
-        //   featuredProject.style.transform = `translate3d(0px, 0px, 0px)`;
-        // },
-      },
-    });
-
-    // tl.to("", {
-    //   // transform: `translateY(30vh)`,
-    //   position: "sticky",
-    //   top: "50px",
-    //   left: "50px",
-    //   ease: "power2.inOut",
-    //   // onComplete: () => {
-    //   //   gsap.to("#featured-project-title", {
-    //   //     position: "fixed",
-    //   //     top: "50px",
-    //   //     left: "50px",
-    //   //   });
-    //   // },
-    // });
-    // tl.to("#featured-project-title", {
-    //   transform: `translateY(-40vh)`,
-    //   ease: "power2.inOut",
-    // });
-
-    tl.set("#featured-project", {
-      transform: `translateX(0px)`,
-    });
-
-    // Move sections horizontally
-    tl.to("#featured-project", {
-      transform: `translateX(calc(${-450 * featuredData?.length}px + 90vh))`,
-      ease: "power2.inOut",
-      onStart: () => {
-        gsap.to("#featured-project-title", {
-          position: "fixed",
-          top: "0px",
-          // x: "50px",
+      if (client_project_links.length > 0) {
+        gsap.to(client_project_links, {
+          opacity: 1,
+          y: 0,
+          duration: 0.5,
+          ease: "power2.inOut",
+          stagger: 0.3,
           scrollTrigger: {
-            trigger: "#featured-project-title",
-            pin: true,
-            start: "top top",
-            end: () => "-=" + window.innerHeight * 2,
-            // scrub: 1,
+            trigger: client_project_links,
+            start: "top 60%",
+            toggleActions: "play none reverse reverse",
+          },
+          onStart: () => {
+            gsap.fromTo(
+              client_project_underline,
+              {
+                width: "0%",
+                duration: 1,
+                ease: "power2.inOut",
+                stagger: 0.3,
+              },
+              {
+                width: "100%",
+                duration: 1,
+                ease: "power2.inOut",
+                stagger: 0.3,
+              }
+            );
           },
         });
-      },
-      onComplete: () => {
-        gsap.to("#featured-project-title", {
-          position: "relative",
-        });
-      },
-    });
+      } else {
+        console.warn("No .client_project_item elements found.");
+      }
 
-    // gsap.set(client_project_links, {
-    //   opacity: 1,
-    //   transform: "translateY(20px)",
-    // });
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#featured-project",
+          pin: true,
+          start: "top 30%",
+          // end: () => `+=${window.innerHeight * 2}`,
+          scrub: 1, // 🔹 Prevents GSAP from adding extra spacing
+          toggleActions: "play none none reverse",
+          // onUpdate: () => {
+          //   const { scrollY } = window;
 
-    // gsap.from(client_project_links, {
-    //   duration: 0.5,
-    //   // opacity: 0,
-    //   transform: "translateY(20px)",
-    //   scrollTrigger: {
-    //     trigger: client_project_links,
-    //     start: "top 10%",
-    //     pin: true,
-    //     toggleActions: "play none none reverse",
-    //     markers: true,
-    //   },
-    // });
+          //   featuredProject.style.transform = `translate3d(0px, 0px, 0px)`;
+          // },
+        },
+      });
 
-    // Animate the cards container separately
+      // tl.to("", {
+      //   // transform: `translateY(30vh)`,
+      //   position: "sticky",
+      //   top: "50px",
+      //   left: "50px",
+      //   ease: "power2.inOut",
+      //   // onComplete: () => {
+      //   //   gsap.to("#featured-project-title", {
+      //   //     position: "fixed",
+      //   //     top: "50px",
+      //   //     left: "50px",
+      //   //   });
+      //   // },
+      // });
+      // tl.to("#featured-project-title", {
+      //   transform: `translateY(-40vh)`,
+      //   ease: "power2.inOut",
+      // });
+
+      tl.set("#featured-project", {
+        transform: `translateX(0px)`,
+      });
+
+      // Move sections horizontally
+      tl.to("#featured-project", {
+        transform: `translateX(calc(${-450 * featuredData?.length}px + 90vh))`,
+        ease: "power2.inOut",
+        onStart: () => {
+          gsap.to("#featured-project-title", {
+            position: "fixed",
+            top: "0px",
+            // x: "50px",
+            scrollTrigger: {
+              trigger: "#featured-project-title",
+              pin: true,
+              start: "top top",
+              end: () => "-=" + window.innerHeight * 2,
+              // scrub: 1,
+            },
+          });
+        },
+        onComplete: () => {
+          gsap.to("#featured-project-title", {
+            position: "relative",
+          });
+        },
+      });
+
+      // gsap.set(client_project_links, {
+      //   opacity: 1,
+      //   transform: "translateY(20px)",
+      // });
+
+      // gsap.from(client_project_links, {
+      //   duration: 0.5,
+      //   // opacity: 0,
+      //   transform: "translateY(20px)",
+      //   scrollTrigger: {
+      //     trigger: client_project_links,
+      //     start: "top 10%",
+      //     pin: true,
+      //     toggleActions: "play none none reverse",
+      //     markers: true,
+      //   },
+      // });
+
+      // Animate the cards container separately
+    }
   });
 
   const handleOpenModal = (item) => {
@@ -284,11 +286,15 @@ export function FeaturedProject() {
             id="featured-project-title"
           >
             Featured <br />{" "}
-            <span className="ml-10 text-[5rem] text-lightGreen">Project</span>
+            <span className="ml-10 text-3xl lg:text-[5rem] text-lightGreen">
+              Project
+            </span>
           </h2>
-          <h2 className="text-5xl block lg:hidden text-white font-bold heading relative pl-[50px] transition-all duration-500 pt-36 pb-10">
+          <h2 className="text-4xl lg:text-5xl block lg:hidden text-white font-bold heading relative pl-[50px] transition-all duration-500 pt-36 pb-10">
             Featured <br />{" "}
-            <span className="ml-10 text-[5rem] text-lightGreen">Project</span>
+            <span className="ml-10 text-5xl lg:text-[5rem] text-lightGreen">
+              Project
+            </span>
           </h2>
           <div
             id="featured-project"
@@ -332,10 +338,10 @@ export function FeaturedProject() {
             ))}
         </section>
         <section
-          className="bg-gray-300 text-black  h-screen sticky top-0 rounded-tr-2xl rounded-tl-2xl overflow-hidden px-12 py-16 mt-10"
+          className="bg-gray-300 text-black  min-h-screen sticky top-0 rounded-tr-2xl rounded-tl-2xl overflow-hidden px-12 py-16 mt-10"
           id="client_project"
         >
-          <h2 className="text-5xl mx-auto text-center text-black font-bold relative mb-20 transition-all duration-500 pb-5 client_project_item -translate-y-[20px] opacity-0 w-[600px] border-b-2 border-black px-36">
+          <h2 className="text-3xl lg:text-5xl lg:mx-auto text-center text-black font-bold relative mb-20 transition-all duration-500 pb-5 client_project_item lg:-translate-y-[20px] lg:opacity-0 w-full lg:w-[600px] border-b-2 border-black lg:px-36">
             Client
             <span className="ml-5 text-yellow-600 ">Projects</span>
             {/* <span className="w-full h-[1px] absolute bottom-0 left-0 right-0 bg-black "></span> */}

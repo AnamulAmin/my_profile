@@ -7,7 +7,7 @@ function FollowMe() {
       <p className="capitalize font-medium">follow me</p>
       <span className="w-[1px] h-16 bg-white self-center"></span>
       <div className="writting_mode_tb flex flex-col items-center gap-2">
-        <a>
+        <a href="https://www.linkedin.com/in/anamulamin/" target="_black">
           <FaLinkedinIn />
         </a>
         <a href="https://github.com/AnamulAmin" target="_black">

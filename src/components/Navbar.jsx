@@ -181,7 +181,7 @@ function Navbar({ children }) {
     <>
       <header className="fixed top-0 left-0 w-full z-50 ">
         <div
-          className="navbar m-auto flex items-center justify-between text-white px-6 py-9 transition-all duration-200 w-full"
+          className="navbar m-auto bg-neutral-900 lg:bg-transparent flex items-center justify-between text-white px-6 py-2 lg:py-9 transition-all duration-200 w-full"
           // ref={nav}
         >
           <div className="navbar-start">

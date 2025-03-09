@@ -35,8 +35,8 @@ function Skills() {
   }, []);
   return (
     <div className="flex flex-col md:flex-row  container mx-auto ">
-      <div className="flex justify-between ">
-        <div className="w-[30%] ">
+      <div className="flex flex-col lg:flex-row justify-between ">
+        <div className="w-full lg:w-[30%] ">
           <div className="text-center sticky top-0 skill-title text-white  px-3 pb-5   w-full bg-neutral-900 border border-gray-500 border-t-none">
             <h2 className="text-3xl text-white font-bold pt-5  mb-6">
               Technical <span className=" text-lightGreen"> Abilities</span>

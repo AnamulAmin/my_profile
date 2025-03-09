@@ -41,7 +41,7 @@ function Introduce() {
         </div>
         <div className="flex flex-col gap-10 mt-8 items-center px-4">
           <IconCloudArea />
-          <p className="text-white ml-auto -mt-20 max-w-[500px] font-medium px-4 pb-10">
+          <p className="text-white mx-auto lg:ml-auto lg:-mt-20 max-w-[500px] font-medium px-16 pb-10">
             {introduce.hi}
             <span className="text-[#FFD369] text-2xl"> {introduce.author}</span>
             <br /> {introduce.text}

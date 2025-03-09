@@ -28,7 +28,7 @@ function ProjectsArea() {
   }, []);
   return (
     <div>
-      <div className="container mx-auto min-h-screen px-8 py-28">
+      <div className="container mx-auto min-h-screen px-8 py-28 hidden lg:block">
         <Tabs>
           <TabList>
             <Tab>
@@ -72,6 +72,36 @@ function ProjectsArea() {
             </div>
           </TabPanel>
         </Tabs>
+      </div>
+      <div className="container mx-auto min-h-screen px-8 py-28 block lg:hidden">
+        <h2 className="text-4xl  font-bold uppercase text-gray-300">
+          React & Full-stack
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-center gap-2 space-x-4 w-full">
+          {react &&
+            react.map((item, idx) => <ProjectCard item={item} key={idx} />)}
+        </div>
+        <h2 className="text-4xl  font-bold uppercase text-gray-300">
+          Electron
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-center gap-2 space-x-4  w-full">
+          {electronJs &&
+            electronJs.map((item, idx) => (
+              <ProjectCard item={item} key={idx} />
+            ))}
+        </div>
+        <h2 className="text-4xl  font-bold uppercase text-gray-300">
+          Next & Full-stack
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-center gap-2 space-x-4 w-full">
+          {next &&
+            next.map((item, idx) => <ProjectCard item={item} key={idx} />)}
+        </div>
+        <h2 className="text-4xl  font-bold uppercase text-gray-300">Html</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-center gap-2 space-x-4  w-full">
+          {html &&
+            html.map((item, idx) => <ProjectCard item={item} key={idx} />)}
+        </div>
       </div>
     </div>
   );

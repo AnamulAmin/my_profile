@@ -19,7 +19,7 @@ function Objective() {
           /> */}
           <p className="text-white max-w-[600px] font-medium mr-3 ">
             {hi}
-            <span className="text-[#FFD369] text-2xl text-center md:text-left mr-3 inline-block">
+            <span className="text-[#FFD369] text-2xl lg:text-center md:text-left lg:mr-3 inline-block">
               {name}
             </span>
             {text}
@@ -39,7 +39,7 @@ function Objective() {
             <a
               href="https://drive.google.com/uc?export=download&id=1sDuYuFwulFmzjiHk_WFK5gELc1L2blVt"
               download
-              className="btn btn-outline mt-8 text-lightGreen inline-flex items-center "
+              className="btn btn-outline mt-8 text-lightGreen flex mx-auto justify-center lg:inline-flex items-center "
             >
               <Button color="success" className="border rounded-xl">
                 Download CV

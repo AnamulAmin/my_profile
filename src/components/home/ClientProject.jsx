@@ -159,7 +159,7 @@ const ClientProject = () => {
             />
           )}
           <h2
-            className={`newFont dark:text-gray-300 uppercase md:text-5xl sm:text-2xl text-xl font-semibold sm:py-6 py-2 leading-[100%] relative client_project_item opacity-0 translate-y-[20px] ${
+            className={`newFont dark:text-gray-300 uppercase md:text-5xl sm:text-2xl text-xl font-semibold sm:py-6 py-2 leading-[100%] relative client_project_item lg:opacity-0 lg:translate-y-[20px] ${
               activeImage?.id === image?.id
                 ? "mix-blend-difference z-20 text-gray-300"
                 : "text-gray-700"
