@@ -37,12 +37,12 @@ function Objective() {
                 ))}
             </div>
             <a
-              href="https://drive.google.com/uc?export=download&id=1sDuYuFwulFmzjiHk_WFK5gELc1L2blVt"
+              href="/Resume_of_Anamul_Amin.pdf"
               download
               className="btn btn-outline mt-8 text-lightGreen flex mx-auto justify-center lg:inline-flex items-center "
             >
               <Button color="success" className="border rounded-xl">
-                Download CV
+                Download Resume
               </Button>
             </a>
           </div>
