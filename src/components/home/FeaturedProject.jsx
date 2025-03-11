@@ -233,10 +233,11 @@ export function FeaturedProject() {
             position: "fixed",
             top: "0px",
             // x: "50px",
+            direction: 300,
             scrollTrigger: {
               trigger: "#featured-project-title",
               pin: true,
-              start: "top top",
+              start: "top 10%",
               end: () => "-=" + window.innerHeight * 2,
               // scrub: 1,
             },
@@ -282,7 +283,7 @@ export function FeaturedProject() {
       <div className={`overflow-hidden `}>
         <section className="relative">
           <h2
-            className="text-5xl hidden lg:block text-white font-bold heading relative pl-[50px] transition-all duration-500 pt-36 pb-10"
+            className="text-5xl hidden lg:block text-white font-bold heading relative pl-[50px] transition-all duration-500 pt-[10vh] pb-10"
             id="featured-project-title"
           >
             Featured <br />{" "}
