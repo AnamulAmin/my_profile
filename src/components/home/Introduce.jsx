@@ -6,6 +6,7 @@ import Address from "../Address";
 import FollowMe from "../FollowMe";
 import { IconCloudArea } from "../IconCloudArea";
 import PhysicsComponent from "../../shared/PhysicsComponent";
+import { AiOutlineArrowDown } from "react-icons/ai";
 
 // import BackgroundAnimation from "../../components/BackgroundAnimation/BackgroundAnimation";
 
@@ -77,6 +78,9 @@ function Introduce() {
       <FollowMe />
       {/* <PhysicsComponent /> */}
       {/* <BackgroundAnimation /> */}
+      <div className="w-16 h-16 rounded-full hidden  bg-white md:flex justify-center items-center absolute right-6 lg:right-28 bottom-12 text-dark-300 font-extrabold text-4xl animate-bounce">
+        <AiOutlineArrowDown />
+      </div>
     </section>
   );
 }
