@@ -50,7 +50,7 @@ export default function NextUiModal({ isOpen, onOpenChange, singleData }) {
                 </h2>
               )}
 
-              <ul className="space-y-2 pb-6">
+              <ul className="space-y-2 pb-6 text-black">
                 {singleData?.list &&
                   singleData?.list.length > 0 &&
                   singleData?.list.map((text, index) => (
