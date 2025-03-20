@@ -9,7 +9,7 @@ export const data = {
     image: "/md-anamul-amin_1654674505.png",
     name: "Muhammad Anamul Amin.",
     hi: "Hey there! I'm ",
-    text: "a passionate Full Stack Developer with 5 months of experience in web development. I've worked on 7 full-stack , 5 React front-end projects, and a desktop application using Electron. I specialize in the MERN stack (MongoDB, Express.js, React, Node.js) and have a strong focus on building seamless, user-friendly applications. My goal is to create intuitive and efficient digital solutions that make life easier for users. I'm excited to continue growing my skills and contributing to the tech community!",
+    text: "a passionate Full Stack Developer with 1 year of experience in web development. I've worked on 7 full-stack , 5 React front-end projects, and a desktop application using Electron. I specialize in the MERN stack (MongoDB, Express.js, React, Node.js) and have a strong focus on building seamless, user-friendly applications. My goal is to create intuitive and efficient digital solutions that make life easier for users. I'm excited to continue growing my skills and contributing to the tech community!",
     address: [
       {
         title: "Age",
